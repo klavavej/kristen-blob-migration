@@ -7,5 +7,5 @@ export default async (req: Request, context: Context) => {
   
   console.log(blobs);
 
-  return new Response(`Found ${blobs.length} blobs`);
+  return new Response(`Found ${blobs.length} blobs. They're ${blobs}`);
 };
