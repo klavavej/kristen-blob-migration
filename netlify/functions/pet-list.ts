@@ -7,7 +7,7 @@ export default async (req: Request, context: Context) => {
   
   console.log(blobs);
 
-  const text = [blobs];
+  const text = JSON.stringify(blobs);
 
-  return new Response(`Found ${blobs.length} blobs. They are ${blobs}`);
+  return new Response(`Found ${blobs.length} blobs. They are ${text}`);
 };
